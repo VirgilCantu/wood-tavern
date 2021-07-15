@@ -5,7 +5,7 @@ class CocktailsController < ApplicationController
   def index
     cocktails = Cocktail.all
 
-    render json: cocktails
+    render json: CocktailSerializer.new(cocktails).to_serialized_json
   end
 
   # GET /cocktails/1
