@@ -22,9 +22,9 @@ class CocktailsController < ApplicationController
     cocktail = Cocktail.new(cocktail_params)
 
     if cocktail.save
-      render json: cocktail, status: :created, location: cocktail
+      render json: CocktailSerializer.new(cocktail).to_serialized_json
     else
-      render json: cocktail.errors, status: :unprocessable_entity
+      render json: { message: 'There was an error creating this cocktail, please try again' }
     end
   end
 
