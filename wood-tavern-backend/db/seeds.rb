@@ -394,7 +394,7 @@ taco_tuesday = Event.create(
     name: "Taco Tuesday",
     date: "Every Tuesday",
     time: "All Day",
-    description: "Come get your grub on at our taco truck while enjoying $4 Modelo Especial and $5 house tequila shots. Music by DJ Lumin"
+    description: "Free tacos from 5 PM to 8 PM, $1 tacos afterwards. Enjoy $5 margaritas and half off drinks until 8PM. Music by DJ Lumin"
 )
 
 ladies_night = Event.create(
@@ -413,7 +413,7 @@ jack_and_stella = Event.create(
 
 backyard_boogie = Event.create(
     name: "Backyard Boogie",
-    date: "Every Sunday",
+    date: "Every Sunday", 
     time: "All Day",
-    description: "$15 buckets of Red Stripe plus an assortment of house punches including Boogie Lemonade, Rum Punch and Cucumber Tequila Punch. Sounds by DJ YNOT"
+    description: "$15 buckets of Dos XX plus an assortment of house punches including Boogie Lemonade, Rum Punch and Cucumber Tequila Punch. Sounds by DJ YNOT"
 )
