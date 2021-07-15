@@ -387,3 +387,33 @@ baby_guiness_shot = Cocktail.create(
     image: "",
     description: "Patron XO, Baileys"
 )
+
+#----------------------Events--------------------#
+
+taco_tuesday = Event.create(
+    name: "Taco Tuesday",
+    date: "Every Tuesday",
+    time: "All Day",
+    description: "Come get your grub on at our taco truck while enjoying $4 Modelo Especial and $5 house tequila shots. Music by DJ Lumin"
+)
+
+ladies_night = Event.create(
+    name: "Ladies Night",
+    date: "Every Wednesday",
+    time: "7 PM to 12 AM",
+    description: "Ladies drink free house liquor from 7 PM to midnight"
+)
+
+jack_and_stella = Event.create(
+    name: "Jack and Stella",
+    date: "Every Thursday"
+    time: "All Day",
+    description: "A shot of Jack and a Stella for $6, with music courtesy of DJ Killakaz"
+)
+
+backyard_boogie = Event.create(
+    name: "Backyard Boogie",
+    date: "Every Sunday",
+    time: "All Day",
+    description: "$15 buckets of Red Stripe plus an assortment of house punches including Boogie Lemonade, Rum Punch and Cucumber Tequila Punch. Sounds by DJ YNOT"
+)
