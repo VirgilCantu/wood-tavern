@@ -30,10 +30,11 @@ class CocktailsController < ApplicationController
 
   # PATCH/PUT /cocktails/1
   def update
+    cocktail = Cocktail.find_by(id: params[:id])
     if cocktail.update(cocktail_params)
-      render json: cocktail
+      render json: CocktailSerializer.new(cocktail).to_serialized_json
     else
-      render json: cocktail.errors, status: :unprocessable_entity
+      render json: { message: 'There was an error updating this cocktail, please try again' }
     end
   end
 
