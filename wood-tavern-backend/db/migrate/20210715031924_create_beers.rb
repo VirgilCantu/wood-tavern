@@ -7,7 +7,6 @@ class CreateBeers < ActiveRecord::Migration[6.1]
       t.string :abv
       t.string :brewery
       t.string :location
-      t.string :image
 
       t.timestamps
     end
