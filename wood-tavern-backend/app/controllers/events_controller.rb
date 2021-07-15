@@ -30,10 +30,11 @@ class EventsController < ApplicationController
 
   # PATCH/PUT /events/1
   def update
+    event = Event.find_by(id: params[:id])
     if event.update(event_params)
-      render json: event
+      render json: EventSerializer.new(event).to_serialized_json
     else
-      render json: event.errors, status: :unprocessable_entity
+      render json: { message: 'There was an error updating this event, please try again' }
     end
   end
 
