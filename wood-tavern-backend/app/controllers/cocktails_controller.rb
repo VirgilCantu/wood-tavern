@@ -40,7 +40,11 @@ class CocktailsController < ApplicationController
 
   # DELETE /cocktails/1
   def destroy
-    cocktail.destroy
+    cocktail = Cocktail.find_by(id: params[:id])
+    if cocktail
+      cocktail.destroy
+    else
+      render json: { message: 'Cocktail not found' }
   end
 
   private
