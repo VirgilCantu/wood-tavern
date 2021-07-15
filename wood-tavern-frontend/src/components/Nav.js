@@ -1,11 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "../css/Navbar.css";
+
+const link = {
+  width: "100px",
+  padding: "12px",
+  margin: "0 6px 6px",
+  textDecoration: "none",
+  color: "white"
+};
 
 const Nav = () => {
   return (
     <div>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
+      <NavLink to="/" exact style={link}>
+        Home
+      </NavLink>
+      <NavLink to="/about" exact style={link}>
+        About
+      </NavLink>
     </div>
   );
 };
