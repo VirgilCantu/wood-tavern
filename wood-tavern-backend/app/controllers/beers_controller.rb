@@ -5,7 +5,7 @@ class BeersController < ApplicationController
   def index
     beers = Beer.all
 
-    render json: beers
+    render json: BeerSerializer.new(beers).to_serialized_json
   end
 
   # GET /beers/1
