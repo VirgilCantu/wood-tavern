@@ -1,5 +1,4 @@
 class CocktailsController < ApplicationController
-  before_action :set_cocktail, only: [:show, :update, :destroy]
 
   # GET /cocktails
   def index
@@ -10,7 +9,12 @@ class CocktailsController < ApplicationController
 
   # GET /cocktails/1
   def show
-    render json: cocktail
+    cocktail = Cocktail.find_by(id: params[:id])
+    if cocktail
+      render json: CocktailSerializer.new(cocktail).to_serialized_json
+    else
+      render json: { message: 'Cocktail not found' }
+    end
   end
 
   # POST /cocktails
@@ -39,11 +43,6 @@ class CocktailsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_cocktail
-      cocktail = Cocktail.find(params[:id])
-    end
-
     # Only allow a list of trusted parameters through.
     def cocktail_params
       params.require(:cocktail).permit(:name, :glassware, :ice, :image, :origin, :preparation)
