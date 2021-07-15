@@ -3,45 +3,45 @@ class BeersController < ApplicationController
 
   # GET /beers
   def index
-    @beers = Beer.all
+    beers = Beer.all
 
-    render json: @beers
+    render json: beers
   end
 
   # GET /beers/1
   def show
-    render json: @beer
+    render json: beer
   end
 
   # POST /beers
   def create
-    @beer = Beer.new(beer_params)
+    beer = Beer.new(beer_params)
 
-    if @beer.save
-      render json: @beer, status: :created, location: @beer
+    if beer.save
+      render json: beer, status: :created, location: beer
     else
-      render json: @beer.errors, status: :unprocessable_entity
+      render json: beer.errors, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /beers/1
   def update
-    if @beer.update(beer_params)
-      render json: @beer
+    if beer.update(beer_params)
+      render json: beer
     else
-      render json: @beer.errors, status: :unprocessable_entity
+      render json: beer.errors, status: :unprocessable_entity
     end
   end
 
   # DELETE /beers/1
   def destroy
-    @beer.destroy
+    beer.destroy
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_beer
-      @beer = Beer.find(params[:id])
+      beer = Beer.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
