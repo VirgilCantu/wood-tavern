@@ -40,7 +40,11 @@ class BeersController < ApplicationController
 
   # DELETE /beers/1
   def destroy
-    beer.destroy
+    beer = Beer.find_by(id: params[:id])
+    if beer
+      beer.destroy
+    else
+      render json: { message: 'Beer not found' }
   end
 
   private
