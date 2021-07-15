@@ -22,9 +22,9 @@ class EventsController < ApplicationController
     event = Event.new(event_params)
 
     if event.save
-      render json: event, status: :created, location: event
+      render json: EventSerializer.new(event).to_serialized_json
     else
-      render json: event.errors, status: :unprocessable_entity
+      render json: { message: 'There was an error creating this event, please try again' }
     end
   end
 
