@@ -30,10 +30,11 @@ class BeersController < ApplicationController
 
   # PATCH/PUT /beers/1
   def update
+    beer = Beer.find_by(id: params[:id])
     if beer.update(beer_params)
       render json: beer
     else
-      render json: beer.errors, status: :unprocessable_entity
+      render json: { message: 'There was an error updating this beer, please try again' }
     end
   end
 
