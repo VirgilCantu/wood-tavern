@@ -45,6 +45,7 @@ class EventsController < ApplicationController
       event.destroy
     else
       render json: { message: 'Event not found' }
+    end
   end
 
   private
