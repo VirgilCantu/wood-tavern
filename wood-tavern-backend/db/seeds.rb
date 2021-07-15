@@ -99,7 +99,7 @@ pumpkinhead_ale = Beer.create(
     location: "Maine, United States"
 )
 
-2xipa = Beer.create(
+two_times_ipa = Beer.create(
     name: "2XIPA",
     format: "Draft",
     style: "IPA - Imperial",
@@ -191,7 +191,7 @@ lager = Beer.create(
     location:  "New York, United States"
 )
 
-60_minute_ipa = Beer.create(
+sixty_minute_ipa = Beer.create(
     name: "60 Minute IPA",
     format: "Bottle",
     style: "IPA - American",
@@ -200,7 +200,7 @@ lager = Beer.create(
     location:  "Delaware, United States"
 )
 
-90_minute_ipa = Beer.create(
+ninety_minute_ipa = Beer.create(
     name: "90 Minute IPA",
     format: "Bottle",
     style: "IPA - Imperial",
@@ -408,7 +408,7 @@ ladies_night = Event.create(
 
 jack_and_stella = Event.create(
     name: "Jack and Stella",
-    date: "Every Thursday"
+    date: "Every Thursday",
     time: "All Day",
     image: "https://pbs.twimg.com/media/E6R3MeWWQAYbZgw?format=jpg&name=medium",
     description: "A shot of Jack and a Stella for $6, with music courtesy of KA5"
