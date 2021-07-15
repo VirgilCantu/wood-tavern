@@ -5,8 +5,23 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
+import { createStore, applyMiddleware, combineReducers } from "redux";
 import thunk from "redux-thunk";
+
+import beersReducer from "./reducers/beersReducer";
+import cocktailsReducer from "./reducers/cocktailsReducer";
+import eventsReducer from "./reducers/eventsReducer";
+
+const rootReducer = combineReducers({
+  beers: beersReducer,
+  cocktails: cocktailsReducer,
+  events: eventsReducer
+});
+
+const store = createStore(
+  rootReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 ReactDOM.render(
   <React.StrictMode>
