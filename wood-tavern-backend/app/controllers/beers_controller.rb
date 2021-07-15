@@ -45,6 +45,7 @@ class BeersController < ApplicationController
       beer.destroy
     else
       render json: { message: 'Beer not found' }
+    end
   end
 
   private
