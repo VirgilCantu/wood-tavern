@@ -22,9 +22,9 @@ class BeersController < ApplicationController
     beer = Beer.new(beer_params)
 
     if beer.save
-      render json: beer, status: :created, location: beer
+      render json: BeerSerializer.new(beer).to_serialized_json
     else
-      render json: beer.errors, status: :unprocessable_entity
+      render json: { message: 'There was an error creating this beer, please try again' }
     end
   end
 
