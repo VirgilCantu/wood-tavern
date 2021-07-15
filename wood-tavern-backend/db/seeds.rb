@@ -394,6 +394,7 @@ taco_tuesday = Event.create(
     name: "Taco Tuesday",
     date: "Every Tuesday",
     time: "All Day",
+    image: "https://pbs.twimg.com/media/CceXWvXWoAIIotE?format=jpg&name=900x900",
     description: "Free tacos from 5 PM to 8 PM, $1 tacos afterwards. Enjoy $5 margaritas and half off drinks until 8PM. Music by DJ Lumin"
 )
 
@@ -401,19 +402,22 @@ ladies_night = Event.create(
     name: "Ladies Night",
     date: "Every Wednesday",
     time: "7 PM to 12 AM",
-    description: "Ladies drink free house liquor from 7 PM to midnight"
+    image: "https://external-preview.redd.it/WsmDijOFpfhlJn-ATh3YtTl-E1_gCkmx-sSjzPYz8xw.png?auto=webp&s=07f6697f787ce0e54060951bdedb6be3a2740dca",
+    description: "Ladies drink free house liquor from 8 PM to midnight. Classic SNES, NES, and Sega games"
 )
 
 jack_and_stella = Event.create(
     name: "Jack and Stella",
     date: "Every Thursday"
     time: "All Day",
-    description: "A shot of Jack and a Stella for $6, with music courtesy of DJ Killakaz"
+    image: "https://pbs.twimg.com/media/E6R3MeWWQAYbZgw?format=jpg&name=medium",
+    description: "A shot of Jack and a Stella for $6, with music courtesy of KA5"
 )
 
 backyard_boogie = Event.create(
     name: "Backyard Boogie",
     date: "Every Sunday", 
     time: "All Day",
+    image: "https://pbs.twimg.com/media/DpquvsuWsAEH0v9?format=jpg&name=large",
     description: "$15 buckets of Dos XX plus an assortment of house punches including Boogie Lemonade, Rum Punch and Cucumber Tequila Punch. Sounds by DJ YNOT"
 )
