@@ -1,5 +1,4 @@
 class BeersController < ApplicationController
-  before_action :set_beer, only: [:show, :update, :destroy]
 
   # GET /beers
   def index
@@ -10,7 +9,12 @@ class BeersController < ApplicationController
 
   # GET /beers/1
   def show
-    render json: beer
+    beer = Beer.find_by(id: params[:id])
+    if beer
+      render json: BeerSerializer.new(beer).to_serialized_json
+    else
+      render json: { message: 'Beer not found' }
+    end
   end
 
   # POST /beers
@@ -39,11 +43,6 @@ class BeersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_beer
-      beer = Beer.find(params[:id])
-    end
-
     # Only allow a list of trusted parameters through.
     def beer_params
       params.require(:beer).permit(:name, :style, :abv, :brewery, :location)
