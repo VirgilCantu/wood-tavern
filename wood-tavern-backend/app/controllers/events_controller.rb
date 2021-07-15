@@ -40,7 +40,11 @@ class EventsController < ApplicationController
 
   # DELETE /events/1
   def destroy
-    event.destroy
+    event = Event.find_by(id: params[:id])
+    if event
+      event.destroy
+    else
+      render json: { message: 'Event not found' }
   end
 
   private
