@@ -32,7 +32,7 @@ class BeersController < ApplicationController
   def update
     beer = Beer.find_by(id: params[:id])
     if beer.update(beer_params)
-      render json: beer
+      render json: BeerSerializer.new(beer).to_serialized_json
     else
       render json: { message: 'There was an error updating this beer, please try again' }
     end
