@@ -1,7 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Cocktails = props => {
-  return <div></div>;
-};
+class Cocktails extends Component {
+  render() {
+    return <div></div>;
+  }
+}
 
 export default Cocktails;
