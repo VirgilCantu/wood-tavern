@@ -291,7 +291,7 @@ humboldt_brown = Beer.create(
 )
 
 palm = Beer.create(
-    name: "Pale",
+    name: "Palm",
     format: "Bottle",
     style: "Pale Ale - Belgian",
     abv: "5.4%",
@@ -378,7 +378,6 @@ berry_gud = Cocktail.create(
 
 baby_guiness_shot = Cocktail.create(
     name: "Baby Guiness Shot",
-    price: "$6",
     image: "",
     description: "Patron XO, Baileys"
 )
