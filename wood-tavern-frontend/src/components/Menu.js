@@ -7,4 +7,11 @@ class Menu extends Component {
   }
 }
 
-export default Menu;
+const mapStateToProps = state => {
+  return {
+    beers: state.beers,
+    cocktails: state.cocktails
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Map);
