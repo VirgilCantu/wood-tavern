@@ -3,11 +3,11 @@ import React from "react";
 const Event = props => {
   return (
     <div>
-      <h1>{props.name}</h1>
+      <h1>{props.event.name}</h1>
       <h3>
-        {props.date} - {props.time}
+        {props.event.date} - {props.event.time}
       </h3>
-      <p>{props.description}</p>
+      <p>{props.event.description}</p>
     </div>
   );
 };
