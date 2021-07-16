@@ -5,7 +5,11 @@ import { connect } from "react-redux";
 
 class BeersContainer extends Component {
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <Beers beers={this.props.beers} />
+      </div>
+    );
   }
 }
 

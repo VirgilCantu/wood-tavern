@@ -7,12 +7,7 @@ class Menu extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <Beers beers={this.props.beers} />
-        <Cocktails cocktails={this.props.cocktails} />
-      </div>
-    );
+    return <div></div>;
   }
 }
 
