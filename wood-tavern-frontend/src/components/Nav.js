@@ -19,7 +19,7 @@ const Nav = () => {
         About
       </NavLink>
       <NavLink to="/beers" exact style={link}>
-        Beers
+        Beer
       </NavLink>
       <NavLink to="/cocktails" exact style={link}>
         Cocktails

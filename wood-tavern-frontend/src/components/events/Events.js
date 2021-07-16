@@ -1,7 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Events = () => {
-  return <div></div>;
-};
+class Events extends Component {
+  render() {
+    return <div></div>;
+  }
+}
 
 export default Events;
