@@ -4,6 +4,10 @@ import { fetchEvents } from "../actions/eventActions";
 import { connect } from "react-redux";
 
 class EventsContainer extends Component {
+  componentDidMount() {
+    this.props.fetchEvents();
+  }
+
   render() {
     return <div></div>;
   }
