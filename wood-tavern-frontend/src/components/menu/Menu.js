@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchBeers } from "../../actions/beerActions";
-import { fetchCocktails } from "../../actions/cocktailActions";
-import Beers from "./Beers";
-import Cocktails from "./Cocktails";
 
 class Menu extends Component {
   componentDidMount() {
