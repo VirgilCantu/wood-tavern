@@ -9,4 +9,4 @@ class BeersContainer extends Component {
   }
 }
 
-export default BeersContainer;
+export default connect(mapStateToProps, mapDispatchToProps)(BeersContainer);

@@ -8,4 +8,4 @@ class CocktailsContainer extends Component {
   }
 }
 
-export default CocktailsContainer;
+export default connect(mapStateToProps, mapDispatchToProps)(CocktailsContainer);
