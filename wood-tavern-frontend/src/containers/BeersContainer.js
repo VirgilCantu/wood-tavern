@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Beers from "./Beers";
-import { fetchBeers } from "../../actions/beerActions";
+import Beers from "../components/beers/Beers";
+import { fetchBeers } from "../actions/beerActions";
 import { connect } from "react-redux";
 
 class BeersContainer extends Component {
