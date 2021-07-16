@@ -15,4 +15,10 @@ const mapStateToProps = state => {
   };
 };
 
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchEvents: () => dispatch(fetchEvents())
+  };
+};
+
 export default connect(mapStateToProps, mapDispatchToProps)(EventsContainer);
