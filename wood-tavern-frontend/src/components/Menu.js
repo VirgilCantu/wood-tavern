@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchBeers } from "../actions/beerActions";
 import { fetchCocktails } from "../actions/cocktailActions";
+import Beers from "../components/Beers";
+import Cocktails from "../components/Cocktails";
 
 class Menu extends Component {
   componentDidMount() {
@@ -10,7 +12,12 @@ class Menu extends Component {
   }
 
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <Beers beers={this.props.beers} />
+        <Cocktails cocktails={this.props.cocktails} />
+      </div>
+    );
   }
 }
 
