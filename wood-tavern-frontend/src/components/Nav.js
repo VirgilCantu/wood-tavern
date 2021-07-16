@@ -18,8 +18,11 @@ const Nav = () => {
       <NavLink to="/about" exact style={link}>
         About
       </NavLink>
-      <NavLink to="/menu" exact style={link}>
-        Menu
+      <NavLink to="/beers" exact style={link}>
+        Beers
+      </NavLink>
+      <NavLink to="/cocktails" exact style={link}>
+        Cocktails
       </NavLink>
       <NavLink to="/events" exact style={link}>
         Events
