@@ -9,7 +9,11 @@ class EventsContainer extends Component {
   }
 
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <Events events={this.props.events} />
+      </div>
+    );
   }
 }
 
