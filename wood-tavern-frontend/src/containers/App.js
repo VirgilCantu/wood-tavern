@@ -4,8 +4,8 @@ import Nav from "../components/Nav";
 import Home from "../components/Home";
 import About from "../components/About";
 import Contact from "../components/Contact";
-import Events from "../components/Events";
-import Menu from "../components/Menu";
+import Events from "../components/events/Events";
+import Menu from "../components/menu/Menu";
 
 const App = () => {
   return (
