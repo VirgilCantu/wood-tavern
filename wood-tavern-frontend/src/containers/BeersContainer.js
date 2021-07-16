@@ -9,4 +9,10 @@ class BeersContainer extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    beers: state.beersReducer.beers
+  };
+};
+
 export default connect(mapStateToProps, mapDispatchToProps)(BeersContainer);

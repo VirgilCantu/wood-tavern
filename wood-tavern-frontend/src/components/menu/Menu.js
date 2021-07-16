@@ -16,13 +16,6 @@ class Menu extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    beers: state.beersReducer.beers,
-    cocktails: state.cocktailsReducer.cocktails
-  };
-};
-
 const mapDispatchToProps = dispatch => {
   return {
     fetchBeers: () => dispatch(fetchBeers()),

@@ -8,4 +8,10 @@ class CocktailsContainer extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    cocktails: state.cocktailsReducer.cocktails
+  };
+};
+
 export default connect(mapStateToProps, mapDispatchToProps)(CocktailsContainer);
