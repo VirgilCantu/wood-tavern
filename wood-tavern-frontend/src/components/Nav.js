@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../css/Navbar.css";
 
 const link = {
   width: "100px",
