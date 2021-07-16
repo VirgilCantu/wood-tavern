@@ -18,6 +18,15 @@ const Nav = () => {
       <NavLink to="/about" exact style={link}>
         About
       </NavLink>
+      <NavLink to="/menu" exact style={link}>
+        Menu
+      </NavLink>
+      <NavLink to="/events" exact style={link}>
+        Events
+      </NavLink>
+      <NavLink to="/contact" exact style={link}>
+        Contact
+      </NavLink>
     </div>
   );
 };
