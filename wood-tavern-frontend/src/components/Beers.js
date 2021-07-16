@@ -6,7 +6,7 @@ class Beers extends Component {
     this.props.beers.map(beer => <Beer key={beer.id} beer={beer} />);
 
   render() {
-    return <div>{this.renderBeers}</div>;
+    return <div>{this.renderBeers()}</div>;
   }
 }
 
