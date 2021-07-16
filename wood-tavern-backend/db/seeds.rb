@@ -348,35 +348,30 @@ amber = Beer.create(
 
 chile_tequila = Cocktail.create(
     name: "Chile Tequila",
-    price: "$8",
     image: "",
     description: "Herradura Silver tequila, agave nectar, fresh lime juice, green chile hot sauce, sliced cucumber"
 )
 
 bourbon_razz = Cocktail.create(
     name: "Bourbon Razz",
-    price: "$8",
     image: "",
     description: "Buffalo Trace bourbon, fresh lime juice, rapsberries, bitters, ginger ale"
 )
 
 snow_misers_cooler = Cocktail.create(
     name: "Snow Misers Cooler",
-    price: "$8",
     image: "",
     description: "Hendricks gin, St. Germain, fresh lime juice, sliced cucumber, soda water"
 )
 
 slice_of_nice = Cocktail.create(
     name: "Slice of Nice",
-    price: "$8",
     image: "",
     description: "Zaya rum, Drambuie, bitters, fresh orange juice"
 )
 
 berry_gud = Cocktail.create(
     name: "Berry Gud",
-    price: "$8",
     image: "",
     description: "Stoli Razz, raspberries, mint, cranberry juice"
 )
