@@ -1,7 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
+import { connect } from "react-redux";
 
-const Menu = () => {
-  return <div></div>;
-};
+class Menu extends Component {
+  render() {
+    return <div></div>;
+  }
+}
 
 export default Menu;
