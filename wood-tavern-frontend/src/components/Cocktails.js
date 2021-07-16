@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Cocktail from "./Cocktail";
 
 class Cocktails extends Component {
   render() {
