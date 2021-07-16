@@ -8,7 +8,17 @@ class Cocktails extends Component {
     ));
 
   render() {
-    return <div>{this.renderCocktails()}</div>;
+    return (
+      <div>
+        <h1>Cocktails</h1>
+        <p>
+          We take a relaxed approach when it comes to our house cocktails.
+          Simple, fresh ingredients that highlight the underlying spirits,
+          without too many of the frills.
+        </p>
+        {this.renderCocktails()}
+      </div>
+    );
   }
 }
 
