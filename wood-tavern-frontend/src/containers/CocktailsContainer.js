@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import Cocktails from "./Cocktails";
 import { fetchCocktails } from "../../actions/cocktailActions";
 import { connect } from "react-redux";
+
 class CocktailsContainer extends Component {
+  componentDidMount() {
+    this.props.fetchCocktails();
+  }
   render() {
     return (
       <div>

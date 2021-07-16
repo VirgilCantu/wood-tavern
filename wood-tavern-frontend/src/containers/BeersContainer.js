@@ -4,6 +4,10 @@ import { fetchBeers } from "../../actions/beerActions";
 import { connect } from "react-redux";
 
 class BeersContainer extends Component {
+  componentDidMount() {
+    this.props.fetchBeers();
+  }
+
   render() {
     return (
       <div>
