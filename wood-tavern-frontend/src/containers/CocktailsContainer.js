@@ -14,4 +14,10 @@ const mapStateToProps = state => {
   };
 };
 
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchCocktails: () => dispatch(fetchCocktails())
+  };
+};
+
 export default connect(mapStateToProps, mapDispatchToProps)(CocktailsContainer);

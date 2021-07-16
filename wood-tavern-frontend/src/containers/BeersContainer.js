@@ -15,4 +15,10 @@ const mapStateToProps = state => {
   };
 };
 
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchBeers: () => dispatch(fetchBeers())
+  };
+};
+
 export default connect(mapStateToProps, mapDispatchToProps)(BeersContainer);

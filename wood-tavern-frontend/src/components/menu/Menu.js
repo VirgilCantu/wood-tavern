@@ -16,11 +16,4 @@ class Menu extends Component {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    fetchBeers: () => dispatch(fetchBeers()),
-    fetchCocktails: () => dispatch(fetchCocktails())
-  };
-};
-
 export default connect(mapStateToProps, mapDispatchToProps)(Menu);
