@@ -5,7 +5,8 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Events from "../components/events/Events";
-import Menu from "../components/menu/Menu";
+import BeersContainer from "../containers/BeersContainer";
+import CocktailsContainer from "../containers/CocktailsContainer";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/events" component={Events} />
-        <Route exact path="/menu" component={Menu} />
+        <Route exact path="/beers" component={BeersContainer} />
+        <Route exact path="/cocktails" component={CocktailsContainer} />
       </Router>
     </div>
   );
