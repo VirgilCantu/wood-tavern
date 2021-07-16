@@ -4,6 +4,11 @@ import { fetchBeers } from "../actions/beerActions";
 import { fetchCocktails } from "../actions/cocktailActions";
 
 class Menu extends Component {
+  componentDidMount() {
+    this.props.fetchBeers();
+    this.props.fetchCocktails();
+  }
+
   render() {
     return <div></div>;
   }
@@ -11,8 +16,8 @@ class Menu extends Component {
 
 const mapStateToProps = state => {
   return {
-    beers: state.beers,
-    cocktails: state.cocktails
+    beers: state.beersReducer.beers,
+    cocktails: state.cocktailsReducer.cocktails
   };
 };
 

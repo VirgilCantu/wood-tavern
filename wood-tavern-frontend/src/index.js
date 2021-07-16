@@ -13,9 +13,9 @@ import eventsReducer from "./reducers/eventsReducer";
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
-  beers: beersReducer,
-  cocktails: cocktailsReducer,
-  events: eventsReducer
+  beersReducer,
+  cocktailsReducer,
+  eventsReducer
 });
 
 const store = createStore(
