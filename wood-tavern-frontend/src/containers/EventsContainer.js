@@ -9,4 +9,4 @@ class EventsContainer extends Component {
   }
 }
 
-export default EventsContainer;
+export default connect(mapStateToProps, mapDispatchToProps)(EventsContainer);
