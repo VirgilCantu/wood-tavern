@@ -9,4 +9,10 @@ class EventsContainer extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    events: state.eventsReducer.events
+  };
+};
+
 export default connect(mapStateToProps, mapDispatchToProps)(EventsContainer);
