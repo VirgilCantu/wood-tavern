@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Reviews from "../components/reviews/Reviews";
+import ReviewInput from "../components/reviews/ReviewInput";
 import { fetchReviews } from "../actions/reviewActions";
 import { addReview } from "../actions/reviewActions";
 import { connect } from "react-redux";
@@ -13,6 +14,7 @@ class ReviewsContainer extends Component {
     return (
       <div>
         <Reviews reviews={this.props.reviews} />
+        <ReviewInput addReview={this.props.addReview} />
       </div>
     );
   }
