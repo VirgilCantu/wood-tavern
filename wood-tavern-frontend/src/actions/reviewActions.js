@@ -4,7 +4,7 @@ export const fetchReviews = () => {
     fetch("http://localhost:3000/reviews")
       .then(response => response.json())
       .then(responseJSON =>
-        dispatch({ type: "ADD_REVIEWS", events: responseJSON })
+        dispatch({ type: "ADD_REVIEWS", reviews: responseJSON })
       );
   };
 };
