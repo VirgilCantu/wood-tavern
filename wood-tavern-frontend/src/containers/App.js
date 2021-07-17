@@ -6,6 +6,7 @@ import About from "../components/About";
 import EventsContainer from "../containers/EventsContainer";
 import BeersContainer from "../containers/BeersContainer";
 import CocktailsContainer from "../containers/CocktailsContainer";
+import ReviewsContainer from "../containers/ReviewsContainer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route exact path="/events" component={EventsContainer} />
         <Route exact path="/beers" component={BeersContainer} />
         <Route exact path="/cocktails" component={CocktailsContainer} />
+        <Route exact path="/reviews" component={ReviewsContainer} />
       </Router>
     </div>
   );

@@ -27,8 +27,8 @@ const Nav = () => {
       <NavLink to="/events" exact style={link}>
         Events
       </NavLink>
-      <NavLink to="/contact" exact style={link}>
-        Contact
+      <NavLink to="/reviews" exact style={link}>
+        Reviews
       </NavLink>
     </div>
   );
