@@ -47,6 +47,7 @@ class ReviewInput extends Component {
             onChange={this.handleChange}
           />
           <br />
+          <br />
           <textarea
             id="content"
             name="content"
