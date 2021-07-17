@@ -9,7 +9,11 @@ class ReviewsContainer extends Component {
   }
 
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <Reviews review={this.props.reviews} />
+      </div>
+    );
   }
 }
 
