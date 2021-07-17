@@ -12,6 +12,12 @@ const reviewsReducer = (state = { reviews: [], loading: false }, action) => {
         reviews: action.reviews,
         loading: false
       };
+    case "ADD_REVIEW":
+      return {
+        ...state,
+        reviews: [...state.reviews, action.review],
+        loading: false
+      };
     default:
       return state;
   }

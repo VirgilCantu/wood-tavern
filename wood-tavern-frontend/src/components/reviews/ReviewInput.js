@@ -5,7 +5,7 @@ class ReviewInput extends Component {
     title: "",
     name: "",
     content: "",
-    date: "",
+    date: Date.now(),
     rating: 5
   };
 
@@ -16,6 +16,7 @@ class ReviewInput extends Component {
   };
 
   handleSubmit = event => {
+    debugger;
     event.preventDefault();
     this.props.addReview(this.state);
     this.setState({
@@ -31,7 +32,7 @@ class ReviewInput extends Component {
     return (
       <div>
         <h2>Add Review</h2>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <label htmlFor="title">Title: </label>
           <input
             type="text"
@@ -57,7 +58,7 @@ class ReviewInput extends Component {
             onChange={this.handleChange}
           ></textarea>
           <br />
-          <input type="submit" onSubmit={this.handleSubmit} />
+          <input type="submit" />
         </form>
       </div>
     );
