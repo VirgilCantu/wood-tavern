@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 class ReviewInput extends Component {
   state = {
-    title: "",
     name: "",
     content: "",
     date: "",
@@ -28,7 +27,6 @@ class ReviewInput extends Component {
     event.preventDefault();
     this.props.addReview(this.state);
     this.setState({
-      title: "",
       name: "",
       content: "",
       date: "",
