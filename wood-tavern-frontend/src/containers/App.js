@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import Home from "../components/Home";
 import About from "../components/About";
@@ -13,12 +13,14 @@ const App = () => {
     <div>
       <Router>
         <Navigation />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/events" component={EventsContainer} />
-        <Route exact path="/beers" component={BeersContainer} />
-        <Route exact path="/cocktails" component={CocktailsContainer} />
-        <Route exact path="/reviews" component={ReviewsContainer} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/events" component={EventsContainer} />
+          <Route exact path="/beers" component={BeersContainer} />
+          <Route exact path="/cocktails" component={CocktailsContainer} />
+          <Route exact path="/reviews" component={ReviewsContainer} />
+        </Switch>
       </Router>
     </div>
   );
