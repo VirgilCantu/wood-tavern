@@ -11,7 +11,7 @@ class ReviewsContainer extends Component {
   render() {
     return (
       <div>
-        <Reviews review={this.props.reviews} />
+        <Reviews reviews={this.props.reviews} />
       </div>
     );
   }
