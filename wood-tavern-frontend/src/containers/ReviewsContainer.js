@@ -9,4 +9,4 @@ class ReviewsContainer extends Component {
   }
 }
 
-export default ReviewsContainer;
+export default connect(mapStateToProps, mapDispatchToProps)(ReviewsContainer);
