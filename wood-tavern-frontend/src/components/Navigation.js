@@ -9,7 +9,7 @@ const link = {
   color: "white"
 };
 
-const Nav = () => {
+const Navigation = () => {
   return (
     <div>
       <NavLink to="/" exact style={link}>
@@ -34,4 +34,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navigation;

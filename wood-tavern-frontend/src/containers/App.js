@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Nav from "../components/Nav";
+import Navigation from "../components/Navigation";
 import Home from "../components/Home";
 import About from "../components/About";
 import EventsContainer from "../containers/EventsContainer";
@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div>
       <Router>
-        <Nav />
+        <Navigation />
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/events" component={EventsContainer} />
