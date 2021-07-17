@@ -31,10 +31,11 @@ class ReviewsController < ApplicationController
 
   # PATCH/PUT /reviews/1
   def update
+    review = Review.find_by(id: params[:id])
     if review.update(review_params)
-      render json: review
+      render json: ReviewSerializer.new(review).to_serialized_json
     else
-      render json: review.errors, status: :unprocessable_entity
+      render json: { message: 'There was an error updating this review, please try again' }
     end
   end
 
