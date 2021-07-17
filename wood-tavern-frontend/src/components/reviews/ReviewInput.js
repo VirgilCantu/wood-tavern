@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import StarRatings from "react-star-ratings";
 
 class ReviewInput extends Component {
   state = {
     name: "",
-    content: "",
+    content: "Leave your thoughts here",
     date: "",
-    rating: 5
+    rating: 0
   };
 
   componentDidMount() {
@@ -26,11 +27,17 @@ class ReviewInput extends Component {
   handleSubmit = event => {
     event.preventDefault();
     this.props.addReview(this.state);
+
     this.setState({
       name: "",
       content: "",
-      date: "",
-      rating: 5
+      rating: 0
+    });
+  };
+
+  changeRating = newRating => {
+    this.setState({
+      rating: newRating
     });
   };
 
@@ -44,7 +51,19 @@ class ReviewInput extends Component {
             type="text"
             name="name"
             id="name"
+            value={this.state.name}
             onChange={this.handleChange}
+          />
+          <br />
+          <br />
+          <StarRatings
+            rating={this.state.rating}
+            changeRating={this.changeRating}
+            isSelectable="true"
+            starDimension="20px"
+            starSpacing="5px"
+            starRatedColor="rgb(255,202,40)"
+            starHoverColor="rgb(255,202,40)"
           />
           <br />
           <br />
@@ -53,10 +72,11 @@ class ReviewInput extends Component {
             name="content"
             rows="5"
             cols="33"
-            defaultValue="Leave your thoughts here..."
             onChange={this.handleChange}
+            value={this.state.content}
           ></textarea>
           <br />
+
           <input type="submit" />
         </form>
       </div>
