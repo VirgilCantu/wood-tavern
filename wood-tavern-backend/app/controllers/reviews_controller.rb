@@ -23,9 +23,9 @@ class ReviewsController < ApplicationController
     review = Review.new(review_params)
 
     if review.save
-      render json: review, status: :created, location: review
+      render json: ReviewSerializer.new(review).to_serialized_json
     else
-      render json: review.errors, status: :unprocessable_entity
+      render json: { message: 'There was an error creating this review, please try again' }
     end
   end
 
