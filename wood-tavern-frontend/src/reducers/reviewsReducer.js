@@ -3,7 +3,7 @@ const reviewsReducer = (state = { reviews: [], loading: false }, action) => {
     case "LOADING_REVIEWS":
       return {
         ...state,
-        reviews: [...state.events],
+        reviews: [...state.reviews],
         loading: true
       };
     case "ADD_REVIEWS":
