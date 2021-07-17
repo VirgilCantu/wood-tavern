@@ -15,4 +15,10 @@ const mapStateToProps = state => {
   };
 };
 
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchReviews: () => dispatch(fetchReviews())
+  };
+};
+
 export default connect(mapStateToProps, mapDispatchToProps)(ReviewsContainer);
