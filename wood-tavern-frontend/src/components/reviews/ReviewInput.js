@@ -15,6 +15,18 @@ class ReviewInput extends Component {
     });
   };
 
+  handleSubmit = event => {
+    event.preventDefault();
+    this.props.addReview(this.state);
+    this.setState({
+      title: "",
+      name: "",
+      content: "",
+      date: "",
+      rating: 5
+    });
+  };
+
   render() {
     return (
       <div>
