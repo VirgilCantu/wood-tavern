@@ -19,6 +19,8 @@ class ReviewInput extends Component {
             cols="33"
             defaultValue="Leave your thoughts here..."
           ></textarea>
+          <br />
+          <input type="submit" />
         </form>
       </div>
     );
