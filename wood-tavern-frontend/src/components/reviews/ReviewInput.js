@@ -6,8 +6,19 @@ class ReviewInput extends Component {
       <div>
         <h2>Add Review</h2>
         <form>
+          <label htmlFor="title">Title: </label>
+          <input type="text" name="title" id="title" />
+          <br />
           <label htmlFor="name">Name: </label>
-          <input type="text" />
+          <input type="text" name="name" id="name" />
+          <br />
+          <textarea
+            id="content"
+            name="content"
+            rows="5"
+            cols="33"
+            defaultValue="Leave your thoughts here..."
+          ></textarea>
         </form>
       </div>
     );
