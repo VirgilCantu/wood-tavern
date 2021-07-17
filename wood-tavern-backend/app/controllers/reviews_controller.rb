@@ -41,7 +41,12 @@ class ReviewsController < ApplicationController
 
   # DELETE /reviews/1
   def destroy
-    review.destroy
+    review = Review.find_by(id: params[:id])
+    if review
+      review.destroy
+    else
+      render json: { message: 'Review not found' }
+    end
   end
 
   private
