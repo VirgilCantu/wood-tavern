@@ -41,14 +41,6 @@ class ReviewInput extends Component {
       <div>
         <h2>Add Review</h2>
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor="title">Title: </label>
-          <input
-            type="text"
-            name="title"
-            id="title"
-            onChange={this.handleChange}
-          />
-          <br />
           <label htmlFor="name">Name: </label>
           <input
             type="text"
