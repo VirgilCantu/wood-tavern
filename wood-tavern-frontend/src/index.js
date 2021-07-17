@@ -9,13 +9,15 @@ import thunk from "redux-thunk";
 import beersReducer from "./reducers/beersReducer";
 import cocktailsReducer from "./reducers/cocktailsReducer";
 import eventsReducer from "./reducers/eventsReducer";
+import reviewsReducer from "./reducers/reviewsReducer";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
   beersReducer,
   cocktailsReducer,
-  eventsReducer
+  eventsReducer,
+  reviewsReducer
 });
 
 const store = createStore(
