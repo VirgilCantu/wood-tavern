@@ -4,6 +4,10 @@ import { fetchReviews } from "../actions/reviewActions";
 import { connect } from "react-redux";
 
 class ReviewsContainer extends Component {
+  componentDidMount() {
+    this.props.fetchReviews();
+  }
+
   render() {
     return <div></div>;
   }
