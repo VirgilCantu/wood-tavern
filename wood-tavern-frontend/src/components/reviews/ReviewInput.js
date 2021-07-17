@@ -5,8 +5,17 @@ class ReviewInput extends Component {
     title: "",
     name: "",
     content: "",
-    date: Date.now(),
+    date: "",
     rating: 5
+  };
+
+  componentDidMount() {
+    this.getDate();
+  }
+
+  getDate = () => {
+    const date = new Date().toDateString();
+    this.setState({ date });
   };
 
   handleChange = event => {
@@ -16,7 +25,6 @@ class ReviewInput extends Component {
   };
 
   handleSubmit = event => {
-    debugger;
     event.preventDefault();
     this.props.addReview(this.state);
     this.setState({
