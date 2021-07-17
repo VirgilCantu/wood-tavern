@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 
 class ReviewInput extends Component {
+  state = {
+    title: "",
+    name: "",
+    content: "",
+    date: "",
+    rating: 5
+  };
+
   render() {
     return (
       <div>
