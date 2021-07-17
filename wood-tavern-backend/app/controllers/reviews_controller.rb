@@ -10,7 +10,12 @@ class ReviewsController < ApplicationController
 
   # GET /reviews/1
   def show
-    render json: review
+    review = Review.find_by(id: params[:id])
+    if review
+      render json: ReviewSerializer.new(review).to_serialized_json
+    else
+      render json: { message: 'Review not found' }
+    end
   end
 
   # POST /reviews
