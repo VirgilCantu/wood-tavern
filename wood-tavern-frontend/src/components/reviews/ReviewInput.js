@@ -57,7 +57,7 @@ class ReviewInput extends Component {
             onChange={this.handleChange}
           ></textarea>
           <br />
-          <input type="submit" />
+          <input type="submit" onSubmit={this.handleSubmit} />
         </form>
       </div>
     );
