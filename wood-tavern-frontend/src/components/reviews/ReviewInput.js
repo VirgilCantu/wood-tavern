@@ -21,10 +21,20 @@ class ReviewInput extends Component {
         <h2>Add Review</h2>
         <form>
           <label htmlFor="title">Title: </label>
-          <input type="text" name="title" id="title" />
+          <input
+            type="text"
+            name="title"
+            id="title"
+            onChange={this.handleChange}
+          />
           <br />
           <label htmlFor="name">Name: </label>
-          <input type="text" name="name" id="name" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            onChange={this.handleChange}
+          />
           <br />
           <textarea
             id="content"
@@ -32,6 +42,7 @@ class ReviewInput extends Component {
             rows="5"
             cols="33"
             defaultValue="Leave your thoughts here..."
+            onChange={this.handleChange}
           ></textarea>
           <br />
           <input type="submit" />
