@@ -419,7 +419,6 @@ backyard_boogie = Event.create(
 #----------------------Reviews--------------------#
 
 great_time = Review.create(
-    title: "Such a great vibe!",
     name: "John Smith",
     content: "Had the best time ever, great atmosphere and fantastic drinks",
     date: "07/03/21",
@@ -427,7 +426,6 @@ great_time = Review.create(
 )
 
 it_sucked = Review.create(
-    title: "Way too crowded",
     name: "Emily Stanton",
     content: "Was way too crowded for my taste, bartenders were rude, drinks were average",
     date: "05/26/21",

@@ -42,7 +42,6 @@ ActiveRecord::Schema.define(version: 2021_07_17_020614) do
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.string "title"
     t.string "name"
     t.string "content"
     t.string "date"
