@@ -415,3 +415,21 @@ backyard_boogie = Event.create(
     image: "https://pbs.twimg.com/media/DpquvsuWsAEH0v9?format=jpg&name=large",
     description: "$15 buckets of Dos XX plus an assortment of house punches including Boogie Lemonade, Rum Punch and Cucumber Tequila Punch. Sounds by DJ YNOT"
 )
+
+#----------------------Reviews--------------------#
+
+great_time = Review.create(
+    title: "Such a great vibe!",
+    name: "John Smith",
+    content: "Had the best time ever, great atmosphere and fantastic drinks",
+    date: "07/03/21",
+    rating: 5
+)
+
+it_sucked = Review.create(
+    title: "Way too crowded",
+    name: "Emily Stanton",
+    content: "Was way too crowded for my taste, bartenders were rude, drinks were average",
+    date: "05/26/21",
+    rating: 2
+)
