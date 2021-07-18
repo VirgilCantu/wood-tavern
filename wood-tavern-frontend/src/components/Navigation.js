@@ -5,7 +5,7 @@ import { LinkContainer } from "react-router-bootstrap";
 
 const Navigation = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" variant="dark">
       <LinkContainer to="/">
         <Navbar.Brand>Wood Tavern</Navbar.Brand>
       </LinkContainer>
