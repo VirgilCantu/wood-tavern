@@ -8,7 +8,7 @@ class Reviews extends Component {
     ));
 
   render() {
-    return <div>{this.renderReviews()}</div>;
+    return <div className="text-center">{this.renderReviews()}</div>;
   }
 }
 

@@ -12,7 +12,7 @@ class Cocktails extends Component {
 
   render() {
     return (
-      <div>
+      <div className="text-center">
         <h1>Cocktails</h1>
         <p>
           We take a relaxed approach when it comes to our house cocktails.

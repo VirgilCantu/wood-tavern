@@ -14,7 +14,7 @@ const Navigation = () => {
           <Nav.Link>About</Nav.Link>
         </LinkContainer>
         <LinkContainer to="/events">
-          <Nav.Link>About</Nav.Link>
+          <Nav.Link>Events</Nav.Link>
         </LinkContainer>
         <LinkContainer to="/beers">
           <Nav.Link>Beer</Nav.Link>

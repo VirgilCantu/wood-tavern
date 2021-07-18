@@ -43,7 +43,7 @@ class ReviewInput extends Component {
 
   render() {
     return (
-      <div>
+      <div className="text-center">
         <h2>Add Review</h2>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name: </label>

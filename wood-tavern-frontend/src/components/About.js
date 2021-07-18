@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div className="text-center">
       <h1>Who We Are</h1>
       <p>
         The idea behind Wood Tavern has always been simple. Open a place where

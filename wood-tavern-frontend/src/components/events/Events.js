@@ -6,7 +6,7 @@ class Events extends Component {
     this.props.events.map(event => <Event key={event.id} event={event} />);
 
   render() {
-    return <div>{this.renderEvents()}</div>;
+    return <div className="text-center">{this.renderEvents()}</div>;
   }
 }
 
