@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
@@ -9,6 +8,23 @@ const Navigation = () => {
       <LinkContainer to="/">
         <Navbar.Brand>Wood Tavern</Navbar.Brand>
       </LinkContainer>
+      <Nav className="mr-auto">
+        <LinkContainer to="/about">
+          <Nav.Link>About</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/events">
+          <Nav.Link>About</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/beers">
+          <Nav.Link>Beer</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/cocktails">
+          <Nav.Link>Cocktail</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/reviews">
+          <Nav.Link>Review</Nav.Link>
+        </LinkContainer>
+      </Nav>
     </Navbar>
   );
 };
