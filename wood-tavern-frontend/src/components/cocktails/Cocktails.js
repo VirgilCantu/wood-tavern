@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Cocktail from "./Cocktail";
+import { Carousel } from "react-bootstrap";
 
 class Cocktails extends Component {
   renderCocktails = () =>
