@@ -5,7 +5,9 @@ import { Carousel } from "react-bootstrap";
 class Cocktails extends Component {
   renderCocktails = () =>
     this.props.cocktails.map(cocktail => (
-      <Cocktail key={cocktail.id} cocktail={cocktail} />
+      <Carousel.Item interval={5000}>
+        <Cocktail key={cocktail.id} cocktail={cocktail} />
+      </Carousel.Item>
     ));
 
   render() {
@@ -17,7 +19,7 @@ class Cocktails extends Component {
           Simple, fresh ingredients that highlight the underlying spirits,
           without too many of the frills.
         </p>
-        {this.renderCocktails()}
+        <Carousel>{this.renderCocktails()}</Carousel>
       </div>
     );
   }
