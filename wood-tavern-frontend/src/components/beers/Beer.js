@@ -2,7 +2,7 @@ import React from "react";
 
 const Beer = props => {
   return (
-    <div>
+    <div className="text-center">
       <h2>{props.beer.name}</h2>
       <h3>
         <b>{props.beer.format}</b>
