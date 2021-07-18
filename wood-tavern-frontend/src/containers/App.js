@@ -7,7 +7,7 @@ import EventsContainer from "../containers/EventsContainer";
 import BeersContainer from "../containers/BeersContainer";
 import CocktailsContainer from "../containers/CocktailsContainer";
 import ReviewsContainer from "../containers/ReviewsContainer";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return (
