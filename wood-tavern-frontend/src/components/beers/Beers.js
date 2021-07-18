@@ -4,7 +4,11 @@ import { Carousel } from "react-bootstrap";
 
 class Beers extends Component {
   renderBeers = () =>
-    this.props.beers.map(beer => <Beer key={beer.id} beer={beer} />);
+    this.props.beers.map(beer => (
+      <Carousel.Item interval={5000}>
+        <Beer key={beer.id} beer={beer} />
+      </Carousel.Item>
+    ));
 
   render() {
     return (
@@ -17,7 +21,9 @@ class Beers extends Component {
           and really dig our selection. Our libation library is always growing
           and changing, so stop in often to see what we’re serving up this time.
         </p>
-        <div>{this.renderBeers()}</div>
+        <div>
+          <Carousel>{this.renderBeers()}</Carousel>
+        </div>
       </div>
     );
   }
