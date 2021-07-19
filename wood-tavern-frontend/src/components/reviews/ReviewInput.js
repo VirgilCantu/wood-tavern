@@ -46,7 +46,7 @@ class ReviewInput extends Component {
       <div className="text-center">
         <h2>Add Review</h2>
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor="name">Name: </label>
+          <label htmlFor="name">Name: &nbsp; </label>
           <input
             type="text"
             name="name"
@@ -76,7 +76,7 @@ class ReviewInput extends Component {
             value={this.state.content}
           ></textarea>
           <br />
-
+          <br />
           <input type="submit" />
         </form>
       </div>
