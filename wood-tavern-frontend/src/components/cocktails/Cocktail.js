@@ -1,13 +1,18 @@
 import React from "react";
+import Card from "react-bootstrap/Card";
 
 const Cocktail = props => {
   return (
-    <div className="text-center">
-      <h2>{props.cocktail.name}</h2>
-      <p>
-        <em>{props.cocktail.description}</em>
-      </p>
-    </div>
+    <Card style={{ width: "30rem", margin: "auto" }} bg="dark" text="light">
+      <Card.Body>
+        <Card.Title>{props.cocktail.name}</Card.Title>
+        <Card.Text>
+          <p>
+            <em>{props.cocktail.description}</em>
+          </p>
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 };
 
