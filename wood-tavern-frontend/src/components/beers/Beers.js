@@ -23,11 +23,9 @@ class Beers extends Component {
           and changing, so stop in often to see what we’re serving up this time.
         </p>
         <br />
-        <div>
-          <Carousel fade indicators={false}>
-            {this.renderBeers()}
-          </Carousel>
-        </div>
+        <Carousel fade indicators={false}>
+          {this.renderBeers()}
+        </Carousel>
       </div>
     );
   }
