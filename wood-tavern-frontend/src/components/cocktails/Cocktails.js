@@ -13,13 +13,17 @@ class Cocktails extends Component {
   render() {
     return (
       <div className="text-center">
+        <br />
         <h1>Cocktails</h1>
-        <p>
+        <p style={{ width: "60rem", margin: "auto" }}>
           We take a relaxed approach when it comes to our house cocktails.
           Simple, fresh ingredients that highlight the underlying spirits,
           without too many of the frills.
         </p>
-        <Carousel>{this.renderCocktails()}</Carousel>
+        <br />
+        <div>
+          <Carousel indicators={false}>{this.renderCocktails()}</Carousel>
+        </div>
       </div>
     );
   }
