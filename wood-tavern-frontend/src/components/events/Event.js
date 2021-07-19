@@ -1,14 +1,23 @@
 import React from "react";
-
+import Card from "react-bootstrap/Card";
 const Event = props => {
   return (
-    <div>
-      <h1>{props.event.name}</h1>
-      <h3>
+    <Card style={{ width: "60rem", margin: "auto" }}>
+      <Card.Header>Wood Tavern Weekly Events</Card.Header>
+      <Card.Body>
+        <Card.Title>
+          <h3>{props.event.name}</h3>
+        </Card.Title>
         {props.event.date} - {props.event.time}
-      </h3>
-      <p>{props.event.description}</p>
-    </div>
+        <br />
+        <br />
+        <Card.Text>
+          <p style={{ width: "40rem", margin: "auto" }}>
+            {props.event.description}
+          </p>
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 };
 
