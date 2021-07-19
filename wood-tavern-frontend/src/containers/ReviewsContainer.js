@@ -15,8 +15,6 @@ class ReviewsContainer extends Component {
       <div>
         <br />
         <Reviews reviews={this.props.reviews} />
-        <br />
-        <br />
         <ReviewInput addReview={this.props.addReview} />
       </div>
     );

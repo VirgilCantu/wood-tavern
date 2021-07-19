@@ -3,8 +3,8 @@ import StarRatings from "react-star-ratings";
 
 class ReviewInput extends Component {
   state = {
-    name: "",
-    content: "Leave your thoughts here",
+    name: "Name",
+    content: "Thoughts?",
     date: "",
     rating: 0
   };
@@ -46,7 +46,6 @@ class ReviewInput extends Component {
       <div className="text-center">
         <h2>Add Review</h2>
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor="name">Name: &nbsp; </label>
           <input
             type="text"
             name="name"
@@ -70,7 +69,7 @@ class ReviewInput extends Component {
           <textarea
             id="content"
             name="content"
-            rows="5"
+            rows="3"
             cols="33"
             onChange={this.handleChange}
             value={this.state.content}
