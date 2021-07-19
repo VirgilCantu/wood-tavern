@@ -20,10 +20,10 @@ const Navigation = () => {
           <Nav.Link>Beer</Nav.Link>
         </LinkContainer>
         <LinkContainer to="/cocktails">
-          <Nav.Link>Cocktail</Nav.Link>
+          <Nav.Link>Cocktails</Nav.Link>
         </LinkContainer>
         <LinkContainer to="/reviews">
-          <Nav.Link>Review</Nav.Link>
+          <Nav.Link>Reviews</Nav.Link>
         </LinkContainer>
       </Nav>
     </Navbar>
