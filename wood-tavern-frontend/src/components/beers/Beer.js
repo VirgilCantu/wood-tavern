@@ -1,20 +1,23 @@
 import React from "react";
+import Card from "react-bootstrap/Card";
 
 const Beer = props => {
   return (
-    <div className="text-center">
-      <h2>{props.beer.name}</h2>
-      <h3>
-        <b>{props.beer.format}</b>
-      </h3>
-      <h4>
-        <em>{props.beer.style}</em>
-      </h4>
-      <p>ABV: {props.beer.abv}</p>
-      <p>
-        {props.beer.brewery} - {props.beer.location}
-      </p>
-    </div>
+    <Card style={{ width: "36rem" }}>
+      <Card.Body>
+        <Card.Title>{props.beer.name}</Card.Title>
+        <Card.Text>
+          <p>
+            <b>{props.beer.format}</b>
+          </p>
+          <p>
+            <em>{props.beer.style}</em>
+          </p>
+          <p>ABV: {props.beer.abv}</p>
+          {props.beer.brewery} - {props.beer.location}
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 };
 
