@@ -13,7 +13,10 @@ class ReviewsContainer extends Component {
   render() {
     return (
       <div>
+        <br />
         <Reviews reviews={this.props.reviews} />
+        <br />
+        <br />
         <ReviewInput addReview={this.props.addReview} />
       </div>
     );
