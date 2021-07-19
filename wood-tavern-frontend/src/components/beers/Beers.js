@@ -24,7 +24,9 @@ class Beers extends Component {
         </p>
         <br />
         <div>
-          <Carousel indicators={false}>{this.renderBeers()}</Carousel>
+          <Carousel fade indicators={false}>
+            {this.renderBeers()}
+          </Carousel>
         </div>
       </div>
     );

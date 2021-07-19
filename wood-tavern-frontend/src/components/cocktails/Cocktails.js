@@ -22,7 +22,9 @@ class Cocktails extends Component {
         </p>
         <br />
         <div>
-          <Carousel indicators={false}>{this.renderCocktails()}</Carousel>
+          <Carousel fade indicators={false}>
+            {this.renderCocktails()}
+          </Carousel>
         </div>
       </div>
     );

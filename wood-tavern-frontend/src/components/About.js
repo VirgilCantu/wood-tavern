@@ -1,8 +1,9 @@
 import React from "react";
+import WoodImage from "../images/wood-about.jpeg";
 
 const About = () => {
   return (
-    <div className="text-center">
+    <div className="text-center imgbox">
       <br />
       <h1>Who We Are</h1>
       <p style={{ width: "60rem", margin: "auto" }}>
@@ -13,6 +14,8 @@ const About = () => {
         catch a picnic table with your friends on the patio. People don’t just
         come here to drink. They come to Wood to get comfortable.
       </p>
+      <br />
+      <img alt="Wood Tavern" src={WoodImage} className="center-fit" />
     </div>
   );
 };
