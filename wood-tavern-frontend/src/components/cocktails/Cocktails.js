@@ -5,7 +5,7 @@ import Carousel from "react-bootstrap/Carousel";
 class Cocktails extends Component {
   renderCocktails = () =>
     this.props.cocktails.map(cocktail => (
-      <Carousel.Item key={cocktail.id} interval={5000}>
+      <Carousel.Item key={cocktail.id} interval={3000}>
         <Cocktail cocktail={cocktail} />
       </Carousel.Item>
     ));
