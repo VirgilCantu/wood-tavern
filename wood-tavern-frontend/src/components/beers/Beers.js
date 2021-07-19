@@ -13,16 +13,18 @@ class Beers extends Component {
   render() {
     return (
       <div className="text-center">
+        <br />
         <h1>Beer</h1>
-        <p>
+        <p style={{ width: "60rem", margin: "auto" }}>
           Wood’s specialty is craft beers, so we stock a very limited supply of
           major brands. We’re not afraid of the big guys, we just like to give
           up-and-comers a shot. If you’re into beer, you’ll know what we mean
           and really dig our selection. Our libation library is always growing
           and changing, so stop in often to see what we’re serving up this time.
         </p>
+        <br />
         <div>
-          <Carousel>{this.renderBeers()}</Carousel>
+          <Carousel indicators={false}>{this.renderBeers()}</Carousel>
         </div>
       </div>
     );

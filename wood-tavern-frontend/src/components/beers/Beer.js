@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 
 const Beer = props => {
   return (
-    <Card style={{ width: "36rem" }}>
+    <Card style={{ width: "30rem", margin: "auto" }} bg="dark" text="light">
       <Card.Body>
         <Card.Title>{props.beer.name}</Card.Title>
         <Card.Text>
