@@ -1,0 +1,8 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./Moon\ Light.otf);
+}
+
+body {
+  font-family: myFirstFont;
+}
