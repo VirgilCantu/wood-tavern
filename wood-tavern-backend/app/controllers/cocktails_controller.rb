@@ -4,14 +4,14 @@ class CocktailsController < ApplicationController
   def index
     cocktails = Cocktail.all
 
-    render json: CocktailSerializer.new(cocktails).to_serialized_json
+    render json: ObjectSerializer.new(cocktails).to_serialized_json
   end
 
   # GET /cocktails/1
   def show
     cocktail = Cocktail.find_by(id: params[:id])
     if cocktail
-      render json: CocktailSerializer.new(cocktail).to_serialized_json
+      render json: ObjectSerializer.new(cocktail).to_serialized_json
     else
       render json: { message: 'Cocktail not found' }
     end
@@ -22,7 +22,7 @@ class CocktailsController < ApplicationController
     cocktail = Cocktail.new(cocktail_params)
 
     if cocktail.save
-      render json: CocktailSerializer.new(cocktail).to_serialized_json
+      render json: ObjectSerializer.new(cocktail).to_serialized_json
     else
       render json: { message: 'There was an error creating this cocktail, please try again' }
     end
@@ -32,7 +32,7 @@ class CocktailsController < ApplicationController
   def update
     cocktail = Cocktail.find_by(id: params[:id])
     if cocktail.update(cocktail_params)
-      render json: CocktailSerializer.new(cocktail).to_serialized_json
+      render json: ObjectSerializer.new(cocktail).to_serialized_json
     else
       render json: { message: 'There was an error updating this cocktail, please try again' }
     end

@@ -4,14 +4,14 @@ class ReviewsController < ApplicationController
   def index
     reviews = Review.all
 
-    render json: ReviewSerializer.new(reviews).to_serialized_json
+    render json: ObjectSerializer.new(reviews).to_serialized_json
   end
 
   # GET /reviews/1
   def show
     review = Review.find_by(id: params[:id])
     if review
-      render json: ReviewSerializer.new(review).to_serialized_json
+      render json: ObjectSerializer.new(review).to_serialized_json
     else
       render json: { message: 'Review not found' }
     end
@@ -22,7 +22,7 @@ class ReviewsController < ApplicationController
     review = Review.new(review_params)
 
     if review.save
-      render json: ReviewSerializer.new(review).to_serialized_json
+      render json: ObjectSerializer.new(review).to_serialized_json
     else
       render json: { message: 'There was an error creating this review, please try again' }
     end
@@ -32,7 +32,7 @@ class ReviewsController < ApplicationController
   def update
     review = Review.find_by(id: params[:id])
     if review.update(review_params)
-      render json: ReviewSerializer.new(review).to_serialized_json
+      render json: ObjectSerializer.new(review).to_serialized_json
     else
       render json: { message: 'There was an error updating this review, please try again' }
     end

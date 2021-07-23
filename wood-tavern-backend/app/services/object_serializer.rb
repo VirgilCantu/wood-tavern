@@ -1,13 +1,13 @@
-class BeerSerializer
+class ObjectSerializer
 
-    def initialize(beer_object)
-        @beer = beer_object
+    def initialize(object)
+        @object = object
     end
 
     def to_serialized_json
         options = {
             except: [:created_at, :updated_at]
         }
-        @beer.to_json(options)
+        @object.to_json(options)
     end
 end

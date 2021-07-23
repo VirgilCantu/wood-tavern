@@ -4,14 +4,14 @@ class EventsController < ApplicationController
   def index
     events = Event.all
 
-    render json: EventSerializer.new(events).to_serialized_json
+    render json: ObjectSerializer.new(events).to_serialized_json
   end
 
   # GET /events/1
   def show
     event = Event.find_by(id: params[:id])
     if event
-      render json: EventSerializer.new(event).to_serialized_json
+      render json: ObjectSerializer.new(event).to_serialized_json
     else
       render json: { message: 'Event not found' }
     end
@@ -22,7 +22,7 @@ class EventsController < ApplicationController
     event = Event.new(event_params)
 
     if event.save
-      render json: EventSerializer.new(event).to_serialized_json
+      render json: ObjectSerializer.new(event).to_serialized_json
     else
       render json: { message: 'There was an error creating this event, please try again' }
     end
@@ -32,7 +32,7 @@ class EventsController < ApplicationController
   def update
     event = Event.find_by(id: params[:id])
     if event.update(event_params)
-      render json: EventSerializer.new(event).to_serialized_json
+      render json: ObjectSerializer.new(event).to_serialized_json
     else
       render json: { message: 'There was an error updating this event, please try again' }
     end
